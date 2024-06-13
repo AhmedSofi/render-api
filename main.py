@@ -3,26 +3,8 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 import re
-import io
-import pathlib
-import textwrap
-
-import google.generativeai as genai
-from fastapi.responses import JSONResponse
-from IPython.display import display
-from IPython.display import Markdown
-import json
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from typing import List, Optional
-import requests
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi import FastAPI
-from uvicorn import Config, Server
 from fastapi import FastAPI, Query
-import pathlib
-import textwrap
+
 import google.generativeai as genai
 app = FastAPI()
 
