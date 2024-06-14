@@ -48,7 +48,7 @@ def create_pdf(input_string, output_file):
     doc.build(story)
 
 
-@app.post("/generate_pdf/")
+@app.get("/generate_pdf/")
 async def generate_pdf(question: list = Query(...), answer: list = Query(...)):
     cu = 1
     question_and_answer = ""
