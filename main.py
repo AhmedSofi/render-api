@@ -10,7 +10,7 @@ app = FastAPI()
 
 
 def gemini(question_and_answer: str):
-    genai.configure(api_key='AIzaSyAFAmVIP6l33PQUj5G0Yk05RyH9u42g1gg')
+    genai.configure(api_key='AIzaSyD71NlNFI6PtmqhbnqXequbdHMthkz17D4')
     model = genai.GenerativeModel('gemini-pro')
     response = model.generate_content(
         f'Describe each question and its answer, and provide information about the question and answer, treatment methods, if any, and whether it requires consulting a doctor or not. ' + question_and_answer)
